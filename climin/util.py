@@ -16,6 +16,7 @@ from .rprop import Rprop
 from .rmsprop import RmsProp
 from .adadelta import Adadelta
 from .adam import Adam
+from .varopt import VarOpt
 
 try:
     from sklearn.grid_search import ParameterSampler
@@ -136,6 +137,7 @@ def optimizer(identifier, wrt, *args, **kwargs):
         'rmsprop': RmsProp,
         'adadelta': Adadelta,
         'adam': Adam,
+        'varopt': VarOpt,
     }
     # Find out which arguments to pass on.
     klass = klass_map[identifier]

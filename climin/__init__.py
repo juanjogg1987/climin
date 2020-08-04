@@ -32,6 +32,7 @@ if sys.platform == 'win32':
 
 from .adadelta import Adadelta
 from .adam import Adam
+from .varopt import VarOpt
 from .asgd import Asgd
 from .bfgs import Bfgs, Lbfgs, Sbfgs
 from .cg import ConjugateGradient, NonlinearConjugateGradient

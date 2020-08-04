@@ -173,7 +173,7 @@ class VarOpt(Minimizer):
         self.est_mom1_b = 0
         self.est_mom2_b = s_ini 
 
-        print('Using Vadam with q_s_ini and Juanjose Check:', self.est_mom2_b)
+        print('Using Variational Optimisation with s_ini:', self.est_mom2_b)
         
         self.step = 0
 
